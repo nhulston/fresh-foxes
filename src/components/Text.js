@@ -17,6 +17,7 @@ export const Title = styled.h1`
 
 export const NavText = styled.div`
   vertical-align: middle;
+  text-align: center;
   color: ${(props) => props.theme.white};
   transition: 0.4s ease;
   margin: 0 16px;

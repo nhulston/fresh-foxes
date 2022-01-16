@@ -60,7 +60,11 @@ export const NavSocial = styled.a`
 `;
 
 export const LogoWrapper = styled.div`
+  grid-area: 1 / 1 / 2 / 2;
   padding-left: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
   @media (max-width: 900px) {
     padding-left: 25px;
