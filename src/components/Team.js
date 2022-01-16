@@ -22,6 +22,10 @@ export const TeamImageWrapper = styled.div`
   border-radius: 50%;
   overflow: hidden;
   margin: 40px auto 0;
+  transition: 0.4s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const TeamLinkWrapper = styled.div`

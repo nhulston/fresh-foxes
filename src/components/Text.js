@@ -93,3 +93,13 @@ export const TeamMemberBio = styled.p`
   color: ${(props) => props.theme.black};
   padding: 30px 100px;
 `;
+
+export const CopyrightText = styled.p`
+  color: ${(props) => props.theme.white};
+  font-size: 1rem;
+`;
+
+export const FooterEmail = styled.a`
+  color: ${(props) => props.theme.white};
+  text-decoration: underline;
+`;

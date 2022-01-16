@@ -12,7 +12,7 @@ export const Navbar = styled.nav`
   animation: moveDown .45s .6s ease-out forwards;
   position: fixed;
   top: 0;
-  background-color: ${(props) => props.theme.backgroundOpacity};
+  background-color: ${(props) => props.theme.navbarColor};
   z-index: 100;
 
   @keyframes moveDown {

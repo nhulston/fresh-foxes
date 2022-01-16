@@ -4,7 +4,7 @@ export const Roadmap = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  background: ${(props) => props.theme.background};
+  background: ${(props) => props.theme.black};
   padding: 100px;
   position: relative;
   z-index: 10;

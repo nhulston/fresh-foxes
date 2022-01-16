@@ -15,7 +15,8 @@ import {
     LaunchDateBottomText,
     TeamMemberName,
     TeamMemberRole,
-    TeamMemberBio
+    TeamMemberBio,
+    CopyrightText, FooterEmail
 } from "../components/Text";
 import {Section} from "../components/Section";
 import {
@@ -41,6 +42,7 @@ import {LaunchDate} from "../components/LaunchDate";
 import {Team, TeamImageWrapper, TeamLink, TeamLinkWrapper, TeamMember} from "../components/Team";
 import nick from "/public/nick.png";
 import brandon from "/public/brandon.png";
+import {Footer, FooterIconsWrapper, FooterLinks} from "../components/Footer";
 
 export default function Home() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -106,7 +108,7 @@ export default function Home() {
                 <Hero>
                     <HeroTextWrapper>
                         <Title>Fresh Foxes</Title>
-                        <Subtitle>We&apos;re releasing <SubtitleBold>5,555</SubtitleBold> hand-drawn foxes into the wild. Minting on the <SubtitleBold>Solana Blockchain</SubtitleBold> in <SubtitleBold>March</SubtitleBold>.</Subtitle>
+                        <Subtitle>We&apos;re releasing <SubtitleBold>5,555</SubtitleBold> hand-drawn foxes into the wild. Minting on the <SubtitleBold>Solana Blockchain</SubtitleBold>.</Subtitle>
                         <ButtonWrapper>
                             <a
                                 href="https://discord.com"
@@ -221,6 +223,24 @@ export default function Home() {
                     </TeamLinkWrapper>
                 </TeamMember>
             </Team>
+            <Footer>
+                <CopyrightText>© 2022 Fresh Foxes</CopyrightText>
+                <FooterLinks>
+                    <FooterIconsWrapper>
+                        <Link href="/" passHref>
+                            <NavSocial>
+                                <BsDiscord/>
+                            </NavSocial>
+                        </Link>
+                        <Link href="/" passHref>
+                            <NavSocial>
+                                <BsTwitter/>
+                            </NavSocial>
+                        </Link>
+                    </FooterIconsWrapper>
+                    <FooterEmail href="mailto:contact@freshfoxes.io">contact@freshfoxes.io</FooterEmail>
+                </FooterLinks>
+            </Footer>
         </div>
     )
 }
