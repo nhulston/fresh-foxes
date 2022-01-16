@@ -4,7 +4,8 @@ export const StarBase = styled.div`
   background: transparent;
   position: relative;
   z-index: -1000;
-
+  overflow: hidden;
+  
   @keyframes animStar {
     from { transform: translateY(0px) }
     to { transform: translateY(-1500px) }
