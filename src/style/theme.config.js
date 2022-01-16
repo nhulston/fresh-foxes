@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components'
 export const theme = {
     background: '#131313',
     backgroundOpacity: '#131313E8',
-    white: '#FEFEFE',
+    white: '#FFFFFF',
+    gray: '#00000022',
     black: '#12183A',
     secondary: '#FF0302',
     secondaryGradient: '#5c00ff',

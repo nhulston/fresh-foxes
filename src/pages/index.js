@@ -8,7 +8,14 @@ import {
     MinorTitle,
     ItemTitle,
     ItemContent,
-    RoadmapTitle, PhaseText, RoadmapText, LaunchDateTopText, LaunchDateBottomText
+    RoadmapTitle,
+    PhaseText,
+    RoadmapText,
+    LaunchDateTopText,
+    LaunchDateBottomText,
+    TeamMemberName,
+    TeamMemberRole,
+    TeamMemberBio
 } from "../components/Text";
 import {Section} from "../components/Section";
 import {
@@ -19,7 +26,7 @@ import {
     HeroTextWrapper,
     Spacer,
 } from "../components/Hero";
-import {BsDiscord, BsTwitter} from "react-icons/bs";
+import {BsDiscord, BsTwitter, BsLinkedin} from "react-icons/bs";
 import Link from 'next/link';
 import Image from "next/image";
 import heroImage from "/public/gif.gif";
@@ -31,7 +38,9 @@ import phase1 from "/public/phase1.png";
 import phase2 from "/public/phase2.png";
 import phase3 from "/public/phase3.png";
 import {LaunchDate} from "../components/LaunchDate";
-import {Team} from "../components/Team";
+import {Team, TeamImageWrapper, TeamLink, TeamLinkWrapper, TeamMember} from "../components/Team";
+import nick from "/public/nick.png";
+import brandon from "/public/brandon.png";
 
 export default function Home() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -184,8 +193,33 @@ export default function Home() {
                 <LaunchDateTopText>RELEASE DATE</LaunchDateTopText>
                 <LaunchDateBottomText>EARLY MARCH 2022</LaunchDateBottomText>
             </LaunchDate>
-            <Team>
-
+            <Team id="team">
+                <TeamMember>
+                    <TeamImageWrapper>
+                        <Image src={nick} alt="" draggable="false"/>
+                    </TeamImageWrapper>
+                    <TeamMemberName>NICK HULSTON</TeamMemberName>
+                    <TeamMemberRole>ARTIST AND DEVELOPER</TeamMemberRole>
+                    <TeamMemberBio>A blockchain developer, designer, and digital artist with several years of experience.</TeamMemberBio>
+                    <TeamLinkWrapper>
+                        <TeamLink>
+                            <BsLinkedin/>
+                        </TeamLink>
+                    </TeamLinkWrapper>
+                </TeamMember>
+                <TeamMember>
+                    <TeamImageWrapper>
+                        <Image src={brandon} alt="" draggable="false"/>
+                    </TeamImageWrapper>
+                    <TeamMemberName>BRANDON LEE</TeamMemberName>
+                    <TeamMemberRole>MARKETING AND COMMUNTIY GROWTH</TeamMemberRole>
+                    <TeamMemberBio>A blockchain developer, designer, and digital artist with several years of experience.</TeamMemberBio>
+                    <TeamLinkWrapper>
+                        <TeamLink>
+                            <BsLinkedin/>
+                        </TeamLink>
+                    </TeamLinkWrapper>
+                </TeamMember>
             </Team>
         </div>
     )

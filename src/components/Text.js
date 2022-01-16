@@ -77,3 +77,19 @@ export const LaunchDateBottomText = styled.h1`
   color: ${(props) => props.theme.white};
   font-size: 6rem;
 `;
+
+export const TeamMemberName = styled.h1`
+  color: ${(props) => props.theme.black};
+  padding-top: 25px;
+  font-size: 3rem;
+`;
+
+export const TeamMemberRole = styled.h1`
+  color: ${(props) => props.theme.black};
+  font-size: 1.5rem;
+`;
+
+export const TeamMemberBio = styled.p`
+  color: ${(props) => props.theme.black};
+  padding: 30px 100px;
+`;
