@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const OpenAnimation = styled.div`
   width: 100%;
-  height: 125%;
+  height: 145%;
   background: ${props => props.theme.openAnimation};
   position: fixed;
   z-index: 110;

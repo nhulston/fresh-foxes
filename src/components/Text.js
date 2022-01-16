@@ -31,15 +31,49 @@ export const SubtitleBold = styled.span`
   font-weight: normal;
 `;
 
-export const MinorTitle = styled.h2`
+export const MinorTitle = styled.h1`
   color: ${(props) => props.theme.secondary};
   font-size: 2.2rem;
+  margin-bottom: 15px;
 `;
 
-export const Body = styled.p`
+export const ItemTitle = styled.p`
   color: ${(props) => props.theme.black};
-  font-weight: 300;
-  font-size: 1.75rem;
+  font-weight: 400;
+  font-size: 1.4rem;
   text-align: center;
-  margin-top: 10px;
+`;
+
+export const ItemContent = styled.p`
+  color: ${(props) => props.theme.black};
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-align: center;
+`;
+
+export const RoadmapTitle = styled.h1`
+  color: ${(props) => props.theme.white};
+  margin-bottom: 20px;
+`;
+
+export const PhaseText = styled.h1`
+  color: ${(props) => props.theme.white};
+  font-weight: 300;
+  font-size: 1.5em;
+`;
+
+export const RoadmapText = styled.p`
+  color: ${(props) => props.theme.white};
+  line-height: 40px;
+`;
+
+export const LaunchDateTopText = styled.h1`
+  color: ${(props) => props.theme.white};
+  font-weight: 300;
+  margin-bottom: -20px;
+`;
+
+export const LaunchDateBottomText = styled.h1`
+  color: ${(props) => props.theme.white};
+  font-size: 6rem;
 `;

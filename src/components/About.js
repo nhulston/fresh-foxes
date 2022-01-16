@@ -11,11 +11,9 @@ export const About = styled.div`
 
 export const AboutImageWrapper = styled.div`
   grid-area: 1 / 1 / 2 / 2;
-  display: flex;
   width: 80%;
-  border-radius: 15px;
   overflow: hidden;
-  margin-right: auto;
+  margin: auto auto auto 0;
 `;
 
 export const AboutTextWrapper = styled.div`
@@ -24,4 +22,16 @@ export const AboutTextWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+export const Items = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+`;
+
+export const Item = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
 `;

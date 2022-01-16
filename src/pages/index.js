@@ -1,6 +1,15 @@
 import {LogoWrapper, Navbar, ItemsWrapper, NavSocial} from '../components/Navbar';
 import {OpenAnimation} from "../components/OpenAnimation";
-import {Title, NavText, Subtitle, SubtitleBold, MinorTitle, Body} from "../components/Text";
+import {
+    Title,
+    NavText,
+    Subtitle,
+    SubtitleBold,
+    MinorTitle,
+    ItemTitle,
+    ItemContent,
+    RoadmapTitle, PhaseText, RoadmapText, LaunchDateTopText, LaunchDateBottomText
+} from "../components/Text";
 import {Section} from "../components/Section";
 import {
     Button,
@@ -9,16 +18,20 @@ import {
     HeroImageWrapper,
     HeroTextWrapper,
     Spacer,
-    Stars1,
-    Stars2,
-    Stars3,
 } from "../components/Hero";
 import {BsDiscord, BsTwitter} from "react-icons/bs";
 import Link from 'next/link';
 import Image from "next/image";
-import heroImage from "/public/39.png";
-import {About, AboutImageWrapper, AboutTextWrapper} from "../components/About";
+import heroImage from "/public/gif.gif";
+import {About, AboutImageWrapper, AboutTextWrapper, Item, Items} from "../components/About";
 import {useEffect, useState} from "react";
+import {Stars1, Stars2, Stars3, StarsRoadmap1, StarsRoadmap2, StarsRoadmap3} from "../components/Stars";
+import {Roadmap, RoadmapImageWrapper, RoadmapItem} from "../components/Roadmap";
+import phase1 from "/public/phase1.png";
+import phase2 from "/public/phase2.png";
+import phase3 from "/public/phase3.png";
+import {LaunchDate} from "../components/LaunchDate";
+import {Team} from "../components/Team";
 
 export default function Home() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -35,8 +48,13 @@ export default function Home() {
         };
     }, []);
 
-    const move = { transform: `scaleY(${1.67 + Math.sin(scrollPosition / 300) / 1.5})` };
+    const move = { transform: `scaleY(${2 + Math.sin(scrollPosition / 300)})` };
     const borderRadius = { borderRadius: `${scrollPosition / 1.5 + 15}px` };
+    const borderRadius2 = { borderRadius: `${Math.max(15, 300 - scrollPosition / 2.5)}px` };
+
+    const moveStars1 = { transform: `translateX(${scrollPosition / 3}px)`};
+    const moveStars2 = { transform: `translateX(${scrollPosition / 5}px)`};
+    const moveStars3 = { transform: `translateX(${scrollPosition / 7}px)`};
 
     return (
         <div>
@@ -51,6 +69,9 @@ export default function Home() {
                   </Link>
               </LogoWrapper>
               <ItemsWrapper>
+                  <Link href="/" passHref>
+                      <NavText>HOME</NavText>
+                  </Link>
                   <Link href="#about" passHref>
                       <NavText>ABOUT</NavText>
                   </Link>
@@ -59,9 +80,6 @@ export default function Home() {
                   </Link>
                   <Link href="#team" passHref>
                       <NavText>TEAM</NavText>
-                  </Link>
-                  <Link href="#faq" passHref>
-                      <NavText>FAQ</NavText>
                   </Link>
                   <Link href="/" passHref>
                       <NavSocial>
@@ -79,13 +97,13 @@ export default function Home() {
                 <Hero>
                     <HeroTextWrapper>
                         <Title>Fresh Foxes</Title>
-                        <Subtitle>We&apos;re releasing <SubtitleBold>3,333</SubtitleBold> hand-drawn foxes into the wild. Minting on the <SubtitleBold>Solana Blockchain</SubtitleBold> in <SubtitleBold>March</SubtitleBold>.</Subtitle>
+                        <Subtitle>We&apos;re releasing <SubtitleBold>5,555</SubtitleBold> hand-drawn foxes into the wild. Minting on the <SubtitleBold>Solana Blockchain</SubtitleBold> in <SubtitleBold>March</SubtitleBold>.</Subtitle>
                         <ButtonWrapper>
                             <a
                                 href="https://discord.com"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                <Button abc>Join the Discord</Button>
+                                <Button abc>JOIN THE DISCORD</Button>
                             </a>
                         </ButtonWrapper>
                     </HeroTextWrapper>
@@ -95,15 +113,80 @@ export default function Home() {
                 </Hero>
             </Section>
             <Spacer style={move}/>
-            <About>
-                <AboutImageWrapper>
+            <About id="about">
+                <AboutImageWrapper style={borderRadius2}>
                     <Image src={heroImage} alt="" draggable="false"/>
                 </AboutImageWrapper>
                 <AboutTextWrapper>
-                    <MinorTitle>What is Fresh Foxes?</MinorTitle>
-                    <Body>Fresh Foxes is a collection of 3,333 randomly generated NFTs on the Solana Blockchain. Because foxes are made up of 70+ traits, each fox is unique.</Body>
+                    <MinorTitle>ABOUT FRESH FOXES</MinorTitle>
+                    <Items>
+                        <Item>
+                            <ItemTitle>Mint Date</ItemTitle>
+                            <ItemContent>Early March</ItemContent>
+                        </Item>
+                        <Item>
+                            <ItemTitle>Total Supply</ItemTitle>
+                            <ItemContent>5,555</ItemContent>
+                        </Item>
+                        <Item>
+                            <ItemTitle>Possible Combinations</ItemTitle>
+                            <ItemContent>648,960</ItemContent>
+                        </Item>
+                        <Item>
+                            <ItemTitle>Mint Price</ItemTitle>
+                            <ItemContent>0.149 SOL</ItemContent>
+                        </Item>
+                    </Items>
                 </AboutTextWrapper>
             </About>
+            <Roadmap id="roadmap">
+                <StarsRoadmap1 style={moveStars1}/>
+                <StarsRoadmap2 style={moveStars2}/>
+                <StarsRoadmap3 style={moveStars3}/>
+                <RoadmapItem>
+                    <RoadmapImageWrapper>
+                        <Image src={phase1} alt="" draggable="false"/>
+                    </RoadmapImageWrapper>
+                    <PhaseText>PHASE 1</PhaseText>
+                    <RoadmapTitle>A NEW BEGINNING</RoadmapTitle>
+                    <RoadmapText>
+                        Project inception<br/>
+                        A strong community grows<br/>
+                        The OGs are rewarded
+                    </RoadmapText>
+                </RoadmapItem>
+                <RoadmapItem>
+                    <RoadmapImageWrapper>
+                        <Image src={phase2} alt="" draggable="false"/>
+                    </RoadmapImageWrapper>
+                    <PhaseText>PHASE 2</PhaseText>
+                    <RoadmapTitle>THE FOXES LAUNCH</RoadmapTitle>
+                    <RoadmapText>
+                        The first drop<br/>
+                        A DAO is constructed<br/>
+                        The holders are rewarded
+                    </RoadmapText>
+                </RoadmapItem>
+                <RoadmapItem>
+                    <RoadmapImageWrapper>
+                        <Image src={phase3} alt="" draggable="false"/>
+                    </RoadmapImageWrapper>
+                    <PhaseText>PHASE 3</PhaseText>
+                    <RoadmapTitle>A FOX&apos;S FRIEND</RoadmapTitle>
+                    <RoadmapText>
+                        The second drop<br/>
+                        Holders whitelisted and airdropped<br/>
+                        The holders are rewarded
+                    </RoadmapText>
+                </RoadmapItem>
+            </Roadmap>
+            <LaunchDate>
+                <LaunchDateTopText>RELEASE DATE</LaunchDateTopText>
+                <LaunchDateBottomText>EARLY MARCH 2022</LaunchDateBottomText>
+            </LaunchDate>
+            <Team>
+
+            </Team>
         </div>
     )
 }

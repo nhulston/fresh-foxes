@@ -1,13 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const theme = {
-    background: '#160A6D',
-    backgroundOpacity: '#160A6DEE',
+    background: '#131313',
+    backgroundOpacity: '#131313E8',
     white: '#FEFEFE',
     black: '#12183A',
-    secondary: '#C04CFD',
+    secondary: '#FF0302',
     secondaryGradient: '#5c00ff',
-    openAnimation: '#0b0537',
+    openAnimation: '#0F0F0F',
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -19,7 +19,8 @@ export const GlobalStyles = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
-     background: ${(props) => props.theme.background};
+    background: ${(props) => props.theme.background};
+    scroll-padding-top: 200px;
   }
 
   body {
