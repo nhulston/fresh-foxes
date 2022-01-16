@@ -163,7 +163,7 @@ export default function Home() {
                     <RoadmapText>
                         Project inception<br/>
                         A strong community grows<br/>
-                        The OGs are rewarded
+                        The OGs are whitelisted
                     </RoadmapText>
                 </RoadmapItem>
                 <RoadmapItem>
@@ -175,7 +175,7 @@ export default function Home() {
                     <RoadmapText>
                         The first drop<br/>
                         A DAO is constructed<br/>
-                        The holders are rewarded
+                        The community drives our vision
                     </RoadmapText>
                 </RoadmapItem>
                 <RoadmapItem>
