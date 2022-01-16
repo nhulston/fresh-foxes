@@ -6,8 +6,9 @@ export const theme = {
     footerColor: 'black',
     white: '#FFFFFF',
     gray: '#00000022',
-    secondary: '#FF0302',
-    secondaryGradient: '#5c00ff',
+    secondary: '#C62467',
+    buttonGrad1: '#ff029a',
+    buttonGrad2: '#c002ff',
     openAnimation: '#0F0F0F',
 }
 

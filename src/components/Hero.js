@@ -44,7 +44,7 @@ export const Button = styled.button`
   color: ${(props) => props.theme.white};
   width: 100%;
   height: 100%;
-  background: linear-gradient(270deg, ${props => props.theme.secondaryGradient}, ${props => props.theme.secondary});
+  background: linear-gradient(270deg, ${props => props.theme.buttonGrad1}, ${props => props.theme.buttonGrad2});
   transition: .4s ease;
   font-size: 18px;
   font-weight: 400;
