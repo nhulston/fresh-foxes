@@ -100,14 +100,14 @@ export const RoadmapText = styled.p`
 export const LaunchDateTopText = styled.h1`
   color: ${(props) => props.theme.white};
   font-weight: 300;
-  margin-bottom: -20px;
 `;
 
 export const LaunchDateBottomText = styled.h1`
   color: ${(props) => props.theme.white};
   font-size: 6rem;
   line-height: 60px;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   
   @media (max-width: 1090px) {
     font-size: 5rem;
