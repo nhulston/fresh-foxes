@@ -1,4 +1,4 @@
-import {LogoWrapper, Navbar, ItemsWrapper, NavSocial} from '../components/Navbar';
+import {LogoWrapper, Navbar, ItemsWrapper, NavSocial, HideItemsOnSmall} from '../components/Navbar';
 import {OpenAnimation} from "../components/OpenAnimation";
 import {
     Title,
@@ -6,8 +6,8 @@ import {
     Subtitle,
     SubtitleBold,
     MinorTitle,
-    ItemTitle,
-    ItemContent,
+    AboutTitle,
+    AboutContent,
     RoadmapTitle,
     PhaseText,
     RoadmapText,
@@ -18,13 +18,12 @@ import {
     TeamMemberBio,
     CopyrightText, FooterEmail
 } from "../components/Text";
-import {Section} from "../components/Section";
 import {
     Button,
     ButtonWrapper,
     Hero,
     HeroImageWrapper,
-    HeroTextWrapper,
+    HeroTextWrapper, HeroWrapper,
     Spacer,
 } from "../components/Hero";
 import {BsDiscord, BsTwitter, BsLinkedin} from "react-icons/bs";
@@ -34,7 +33,14 @@ import heroImage from "/public/gif.gif";
 import {About, AboutImageWrapper, AboutTextWrapper, Item, Items} from "../components/About";
 import {useEffect, useState} from "react";
 import {Stars1, Stars2, Stars3, StarsRoadmap1, StarsRoadmap2, StarsRoadmap3} from "../components/Stars";
-import {Roadmap, RoadmapImageWrapper, RoadmapItem} from "../components/Roadmap";
+import {
+    Roadmap,
+    RoadmapImageWrapper,
+    RoadmapItem,
+    RoadmapItem1,
+    RoadmapItem2,
+    RoadmapItem3
+} from "../components/Roadmap";
 import phase1 from "/public/phase1.png";
 import phase2 from "/public/phase2.png";
 import phase3 from "/public/phase3.png";
@@ -42,7 +48,7 @@ import {LaunchDate} from "../components/LaunchDate";
 import {Team, TeamImageWrapper, TeamLink, TeamLinkWrapper, TeamMember} from "../components/Team";
 import nick from "/public/nick.png";
 import brandon from "/public/brandon.png";
-import {Footer, FooterIconsWrapper, FooterLinks} from "../components/Footer";
+import {Footer, FooterHideOnSmallScreen, FooterIconsWrapper, FooterLinks} from "../components/Footer";
 
 export default function Home() {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -83,15 +89,17 @@ export default function Home() {
                   <Link href="/" passHref>
                       <NavText>HOME</NavText>
                   </Link>
-                  <Link href="#about" passHref>
-                      <NavText>ABOUT</NavText>
-                  </Link>
-                  <Link href="#roadmap" passHref>
-                      <NavText>ROADMAP</NavText>
-                  </Link>
-                  <Link href="#team" passHref>
-                      <NavText>TEAM</NavText>
-                  </Link>
+                  <HideItemsOnSmall>
+                      <Link href="#about" passHref>
+                          <NavText>ABOUT</NavText>
+                      </Link>
+                      <Link href="#roadmap" passHref>
+                          <NavText>ROADMAP</NavText>
+                      </Link>
+                      <Link href="#team" passHref>
+                          <NavText>TEAM</NavText>
+                      </Link>
+                  </HideItemsOnSmall>
                   <Link href="/" passHref>
                       <NavSocial>
                           <BsDiscord/>
@@ -104,7 +112,7 @@ export default function Home() {
                   </Link>
               </ItemsWrapper>
             </Navbar>
-            <Section>
+            <HeroWrapper>
                 <Hero>
                     <HeroTextWrapper>
                         <Title>Fresh Foxes</Title>
@@ -122,7 +130,7 @@ export default function Home() {
                         <Image src={heroImage} alt="" draggable="false"/>
                     </HeroImageWrapper>
                 </Hero>
-            </Section>
+            </HeroWrapper>
             <Spacer style={move}/>
             <About id="about">
                 <AboutImageWrapper style={borderRadius2}>
@@ -132,20 +140,20 @@ export default function Home() {
                     <MinorTitle>ABOUT FRESH FOXES</MinorTitle>
                     <Items>
                         <Item>
-                            <ItemTitle>Mint Date</ItemTitle>
-                            <ItemContent>Early March</ItemContent>
+                            <AboutTitle>Mint Date</AboutTitle>
+                            <AboutContent>Early March</AboutContent>
                         </Item>
                         <Item>
-                            <ItemTitle>Total Supply</ItemTitle>
-                            <ItemContent>5,555</ItemContent>
+                            <AboutTitle>Total Supply</AboutTitle>
+                            <AboutContent>5,555</AboutContent>
                         </Item>
                         <Item>
-                            <ItemTitle>Possible Combinations</ItemTitle>
-                            <ItemContent>648,960</ItemContent>
+                            <AboutTitle>Possible Combinations</AboutTitle>
+                            <AboutContent>648,960</AboutContent>
                         </Item>
                         <Item>
-                            <ItemTitle>Mint Price</ItemTitle>
-                            <ItemContent>0.149 SOL</ItemContent>
+                            <AboutTitle>Mint Price</AboutTitle>
+                            <AboutContent>0.149 SOL</AboutContent>
                         </Item>
                     </Items>
                 </AboutTextWrapper>
@@ -154,7 +162,7 @@ export default function Home() {
                 <StarsRoadmap1 style={moveStars1}/>
                 <StarsRoadmap2 style={moveStars2}/>
                 <StarsRoadmap3 style={moveStars3}/>
-                <RoadmapItem>
+                <RoadmapItem1>
                     <RoadmapImageWrapper>
                         <Image src={phase1} alt="" draggable="false"/>
                     </RoadmapImageWrapper>
@@ -165,8 +173,8 @@ export default function Home() {
                         A strong community grows<br/>
                         The OGs are whitelisted
                     </RoadmapText>
-                </RoadmapItem>
-                <RoadmapItem>
+                </RoadmapItem1>
+                <RoadmapItem2>
                     <RoadmapImageWrapper>
                         <Image src={phase2} alt="" draggable="false"/>
                     </RoadmapImageWrapper>
@@ -177,8 +185,8 @@ export default function Home() {
                         A DAO is constructed<br/>
                         The community drives our vision
                     </RoadmapText>
-                </RoadmapItem>
-                <RoadmapItem>
+                </RoadmapItem2>
+                <RoadmapItem3>
                     <RoadmapImageWrapper>
                         <Image src={phase3} alt="" draggable="false"/>
                     </RoadmapImageWrapper>
@@ -189,7 +197,7 @@ export default function Home() {
                         Holders whitelisted and airdropped<br/>
                         The holders are rewarded
                     </RoadmapText>
-                </RoadmapItem>
+                </RoadmapItem3>
             </Roadmap>
             <LaunchDate>
                 <LaunchDateTopText>RELEASE DATE</LaunchDateTopText>
@@ -226,18 +234,20 @@ export default function Home() {
             <Footer>
                 <CopyrightText>© 2022 Fresh Foxes</CopyrightText>
                 <FooterLinks>
-                    <FooterIconsWrapper>
-                        <Link href="/" passHref>
-                            <NavSocial>
-                                <BsDiscord/>
-                            </NavSocial>
-                        </Link>
-                        <Link href="/" passHref>
-                            <NavSocial>
-                                <BsTwitter/>
-                            </NavSocial>
-                        </Link>
-                    </FooterIconsWrapper>
+                    <FooterHideOnSmallScreen>
+                        <FooterIconsWrapper>
+                            <Link href="/" passHref>
+                                <NavSocial>
+                                    <BsDiscord/>
+                                </NavSocial>
+                            </Link>
+                            <Link href="/" passHref>
+                                <NavSocial>
+                                    <BsTwitter/>
+                                </NavSocial>
+                            </Link>
+                        </FooterIconsWrapper>
+                    </FooterHideOnSmallScreen>
                     <FooterEmail href="mailto:contact@freshfoxes.io">contact@freshfoxes.io</FooterEmail>
                 </FooterLinks>
             </Footer>

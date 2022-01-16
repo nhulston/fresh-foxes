@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Navbar = styled.nav`
   padding: 25px 0;
-  //margin: 0 300px;
-  //max-width: 1064px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -27,6 +25,23 @@ export const ItemsWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding-right: 100px;
+  
+  @media (max-width: 900px) {
+    padding-right: 25px;
+  }
+  
+  @media (max-width: 824px) {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-content: space-evenly;
+  }
+`;
+
+export const HideItemsOnSmall = styled.div`
+  display: flex;
+  
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const NavSocial = styled.a`
@@ -46,4 +61,12 @@ export const NavSocial = styled.a`
 
 export const LogoWrapper = styled.div`
   padding-left: 100px;
+
+  @media (max-width: 900px) {
+    padding-left: 25px;
+  }
+  
+  @media (max-width: 825px) {
+    display: none;
+  }
 `;
