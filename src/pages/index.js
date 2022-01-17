@@ -101,7 +101,7 @@ export default function Home() {
                   </HideItemsOnSmall>
                   <NavSocial>
                       <a
-                          href="https://discord.gg/qC49HsrvS4"
+                          href="https://discord.gg/SMc6qS7zxX"
                           target="_blank"
                           rel="noopener noreferrer">
                           <BsDiscord/>
@@ -124,7 +124,7 @@ export default function Home() {
                         <Subtitle>We&apos;re releasing <SubtitleBold>5,555</SubtitleBold> hand-drawn foxes into the wild. Minting on the <SubtitleBold>Solana Blockchain</SubtitleBold>.</Subtitle>
                         <ButtonWrapper>
                             <a
-                                href="https://discord.gg/qC49HsrvS4"
+                                href="https://discord.gg/SMc6qS7zxX"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 <Button abc>JOIN THE DISCORD</Button>
@@ -243,7 +243,7 @@ export default function Home() {
                         <FooterIconsWrapper>
                             <NavSocial>
                                 <a
-                                    href="https://discord.gg/qC49HsrvS4"
+                                    href="https://discord.gg/SMc6qS7zxX"
                                     target="_blank"
                                     rel="noopener noreferrer">
                                     <BsDiscord/>
