@@ -26,7 +26,7 @@ import {
     HeroTextWrapper, HeroWrapper,
     Spacer,
 } from "../components/Hero";
-import {BsDiscord, BsTwitter, BsLinkedin} from "react-icons/bs";
+import {BsDiscord, BsTwitter} from "react-icons/bs";
 import Link from 'next/link';
 import Image from "next/image";
 import heroImage from "/public/gif.gif";
@@ -36,7 +36,6 @@ import {Stars1, Stars2, Stars3, StarsRoadmap1, StarsRoadmap2, StarsRoadmap3} fro
 import {
     Roadmap,
     RoadmapImageWrapper,
-    RoadmapItem,
     RoadmapItem1,
     RoadmapItem2,
     RoadmapItem3
@@ -208,27 +207,27 @@ export default function Home() {
                     <TeamImageWrapper>
                         <Image src={nick} alt="" draggable="false"/>
                     </TeamImageWrapper>
-                    <TeamMemberName>NICK HULSTON</TeamMemberName>
+                    <TeamMemberName>NICHOLAS</TeamMemberName>
                     <TeamMemberRole>ARTIST AND DEVELOPER</TeamMemberRole>
                     <TeamMemberBio>A blockchain developer, designer, and digital artist with several years of experience.</TeamMemberBio>
-                    <TeamLinkWrapper>
+                    {/*<TeamLinkWrapper>
                         <TeamLink>
                             <BsLinkedin/>
                         </TeamLink>
-                    </TeamLinkWrapper>
+                    </TeamLinkWrapper>*/}
                 </TeamMember>
                 <TeamMember>
                     <TeamImageWrapper>
                         <Image src={brandon} alt="" draggable="false"/>
                     </TeamImageWrapper>
-                    <TeamMemberName>BRANDON LEE</TeamMemberName>
+                    <TeamMemberName>BRANDON</TeamMemberName>
                     <TeamMemberRole>MARKETING AND COMMUNTIY GROWTH</TeamMemberRole>
                     <TeamMemberBio>A blockchain developer, designer, and digital artist with several years of experience.</TeamMemberBio>
-                    <TeamLinkWrapper>
+                    {/*<TeamLinkWrapper>
                         <TeamLink>
                             <BsLinkedin/>
                         </TeamLink>
-                    </TeamLinkWrapper>
+                    </TeamLinkWrapper>*/}
                 </TeamMember>
             </Team>
             <Footer>
