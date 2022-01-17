@@ -24,8 +24,9 @@ export const FooterLinks = styled.div`
 `;
 
 export const FooterIconsWrapper = styled.div`
-  margin-top: 0;
-  margin-right: 15px;
+  margin: auto 15px auto 0;
+  display: flex;
+  
 `;
 
 export const FooterHideOnSmallScreen = styled.div`

@@ -44,7 +44,7 @@ export const HideItemsOnSmall = styled.div`
   }
 `;
 
-export const NavSocial = styled.a`
+export const NavSocial = styled.div`
   transition: 0.3s ease;
   color: ${(props) => props.theme.white};
   border-radius: 100%;

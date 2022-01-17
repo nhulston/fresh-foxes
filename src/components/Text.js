@@ -145,9 +145,12 @@ export const TeamMemberBio = styled.p`
 export const CopyrightText = styled.p`
   color: ${(props) => props.theme.white};
   font-size: 1rem;
+  margin: auto 0;
 `;
 
 export const FooterEmail = styled.a`
   color: ${(props) => props.theme.white};
   text-decoration: underline;
+  margin: auto 0;
+  font-size: 1rem;
 `;

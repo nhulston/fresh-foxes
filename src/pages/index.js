@@ -80,35 +80,41 @@ export default function Home() {
             <Stars3/>
             <Navbar>
               <LogoWrapper>
-                  <Link href="/" passHref>
+                  <Link href="/">
                       <NavText>FRESH FOXES</NavText>
                   </Link>
               </LogoWrapper>
               <ItemsWrapper>
-                  <Link href="/" passHref>
+                  <Link href="/">
                       <NavText>HOME</NavText>
                   </Link>
                   <HideItemsOnSmall>
-                      <Link href="#about" passHref>
+                      <Link href="#about">
                           <NavText>ABOUT</NavText>
                       </Link>
-                      <Link href="#roadmap" passHref>
+                      <Link href="#roadmap">
                           <NavText>ROADMAP</NavText>
                       </Link>
-                      <Link href="#team" passHref>
+                      <Link href="#team">
                           <NavText>TEAM</NavText>
                       </Link>
                   </HideItemsOnSmall>
-                  <Link href="/" passHref>
-                      <NavSocial>
+                  <NavSocial>
+                      <a
+                          href="https://discord.gg/qC49HsrvS4"
+                          target="_blank"
+                          rel="noopener noreferrer">
                           <BsDiscord/>
-                      </NavSocial>
-                  </Link>
-                  <Link href="/" passHref>
-                      <NavSocial>
+                      </a>
+                  </NavSocial>
+                  <NavSocial>
+                      <a
+                          href="https://twitter.com/FreshFoxes"
+                          target="_blank"
+                          rel="noopener noreferrer">
                           <BsTwitter/>
-                      </NavSocial>
-                  </Link>
+                      </a>
+                  </NavSocial>
               </ItemsWrapper>
             </Navbar>
             <HeroWrapper>
@@ -118,7 +124,7 @@ export default function Home() {
                         <Subtitle>We&apos;re releasing <SubtitleBold>5,555</SubtitleBold> hand-drawn foxes into the wild. Minting on the <SubtitleBold>Solana Blockchain</SubtitleBold>.</Subtitle>
                         <ButtonWrapper>
                             <a
-                                href="https://discord.com"
+                                href="https://discord.gg/qC49HsrvS4"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 <Button abc>JOIN THE DISCORD</Button>
@@ -235,16 +241,22 @@ export default function Home() {
                 <FooterLinks>
                     <FooterHideOnSmallScreen>
                         <FooterIconsWrapper>
-                            <Link href="/" passHref>
-                                <NavSocial>
+                            <NavSocial>
+                                <a
+                                    href="https://discord.gg/qC49HsrvS4"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
                                     <BsDiscord/>
-                                </NavSocial>
-                            </Link>
-                            <Link href="/" passHref>
-                                <NavSocial>
+                                </a>
+                            </NavSocial>
+                            <NavSocial>
+                                <a
+                                    href="https://twitter.com/FreshFoxes"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
                                     <BsTwitter/>
-                                </NavSocial>
-                            </Link>
+                                </a>
+                            </NavSocial>
                         </FooterIconsWrapper>
                     </FooterHideOnSmallScreen>
                     <FooterEmail href="mailto:contact@freshfoxes.io">contact@freshfoxes.io</FooterEmail>
