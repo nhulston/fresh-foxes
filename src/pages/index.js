@@ -227,8 +227,8 @@ export default function Home() {
                         <Image src={brandon} alt="" draggable="false"/>
                     </TeamImageWrapper>
                     <TeamMemberName>BRANDON</TeamMemberName>
-                    <TeamMemberRole>MARKETING AND COMMUNTIY GROWTH</TeamMemberRole>
-                    <TeamMemberBio>A blockchain developer, designer, and digital artist with several years of experience.</TeamMemberBio>
+                    <TeamMemberRole>MARKETING AND COMMUNITY GROWTH</TeamMemberRole>
+                    <TeamMemberBio>A digital marketer and NFT maxi. Addison Rae&apos;s future sugar daddy.</TeamMemberBio>
                     {/*<TeamLinkWrapper>
                         <TeamLink>
                             <BsLinkedin/>
