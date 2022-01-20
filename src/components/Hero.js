@@ -12,8 +12,8 @@ export const Hero = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  margin-top: 220px;
-  margin-bottom: 61px;
+  margin-top: 280px;
+  margin-bottom: 110px;
   animation: fadeIn 1.25s ease-in forwards;
   
   @keyframes fadeIn {
