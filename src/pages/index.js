@@ -1,4 +1,4 @@
-import {LogoWrapper, Navbar, ItemsWrapper, NavSocial, HideItemsOnSmall} from '../components/Navbar';
+import {LogoWrapper, Navbar, ItemsWrapper, NavSocial, HideItemsOnSmall, LogoImageWrapper} from '../components/Navbar';
 import {OpenAnimation} from "../components/OpenAnimation";
 import {
     Title,
@@ -30,6 +30,8 @@ import {BsDiscord, BsTwitter} from "react-icons/bs";
 import Link from 'next/link';
 import Image from "next/image";
 import heroImage from "/public/gif.gif";
+import police from "/public/police.png";
+import logo from "/public/logo.png";
 import {About, AboutImageWrapper, AboutTextWrapper, Item, Items} from "../components/About";
 import {useEffect, useState} from "react";
 import {Stars1, Stars2, Stars3, StarsRoadmap1, StarsRoadmap2, StarsRoadmap3} from "../components/Stars";
@@ -44,7 +46,7 @@ import phase1 from "/public/phase1.png";
 import phase2 from "/public/phase2.png";
 import phase3 from "/public/phase3.png";
 import {LaunchDate} from "../components/LaunchDate";
-import {Team, TeamImageWrapper, TeamLink, TeamLinkWrapper, TeamMember} from "../components/Team";
+import {Team, TeamImageWrapper, TeamMember} from "../components/Team";
 import nick from "/public/nick.png";
 import brandon from "/public/brandon.png";
 import {Footer, FooterHideOnSmallScreen, FooterIconsWrapper, FooterLinks} from "../components/Footer";
@@ -79,11 +81,14 @@ export default function Home() {
             <Stars2/>
             <Stars3/>
             <Navbar>
-              <LogoWrapper>
-                  <Link href="/">
-                      <NavText>FRESH FOXES</NavText>
-                  </Link>
-              </LogoWrapper>
+            <Link href="/">
+                <LogoWrapper>
+                    <LogoImageWrapper>
+                        <Image src={logo} alt="" draggable="false"/>
+                    </LogoImageWrapper>
+                    <NavText>FRESH FOXES</NavText>
+                </LogoWrapper>
+            </Link>
               <ItemsWrapper>
                   <Link href="/">
                       <NavText>HOME</NavText>
@@ -139,7 +144,7 @@ export default function Home() {
             <Spacer style={move}/>
             <About id="about">
                 <AboutImageWrapper style={borderRadius2}>
-                    <Image src={heroImage} alt="" draggable="false"/>
+                    <Image src={police} alt="" draggable="false"/>
                 </AboutImageWrapper>
                 <AboutTextWrapper>
                     <MinorTitle>ABOUT FRESH FOXES</MinorTitle>

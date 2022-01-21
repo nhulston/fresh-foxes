@@ -74,3 +74,8 @@ export const LogoWrapper = styled.div`
     display: none;
   }
 `;
+
+export const LogoImageWrapper = styled.div`
+  width: 40px;
+  height: 40px;
+`;
