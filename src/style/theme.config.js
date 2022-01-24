@@ -46,6 +46,4 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     cursor: pointer;
   }
-  
-  
 `;

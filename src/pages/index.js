@@ -159,7 +159,7 @@ export default function Home() {
                         </Item>
                         <Item>
                             <AboutTitle>Possible Combinations</AboutTitle>
-                            <AboutContent>648,960</AboutContent>
+                            <AboutContent>2,235,870</AboutContent>
                         </Item>
                         <Item>
                             <AboutTitle>Mint Price</AboutTitle>
@@ -220,7 +220,7 @@ export default function Home() {
                     </TeamImageWrapper>
                     <TeamMemberName>NICHOLAS</TeamMemberName>
                     <TeamMemberRole>ARTIST AND DEVELOPER</TeamMemberRole>
-                    <TeamMemberBio>A blockchain developer, designer, and digital artist with several years of experience.</TeamMemberBio>
+                    <TeamMemberBio>A blockchain developer, designer, and digital artist.</TeamMemberBio>
                     {/*<TeamLinkWrapper>
                         <TeamLink>
                             <BsLinkedin/>
