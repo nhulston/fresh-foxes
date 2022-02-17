@@ -39,22 +39,22 @@ export const TeamImageWrapper = styled.div`
   }
 `;
 
-// export const TeamLinkWrapper = styled.div`
-//   transition: 0.3s ease;
-//   &:hover {
-//     transform: scale(1.15);
-//   }
-//   margin-bottom: 20px;
-// `;
-//
-// export const TeamLink = styled.a`
-//   color: ${(props) => props.theme.black};
-//   border-radius: 50%;
-//   padding: 14px 14px 6px 14px;
-//   font-size: 2rem;
-//   transition: 0.3s ease;
-//   &:hover {
-//     background-color: #00000020;
-//     cursor: pointer;
-//   }
-// `;
+export const TeamLinkWrapper = styled.div`
+  transition: 0.3s ease;
+  &:hover {
+    transform: scale(1.15);
+  }
+  margin-bottom: 20px;
+`;
+
+export const TeamLink = styled.a`
+  color: ${(props) => props.theme.black};
+  border-radius: 50%;
+  padding: 14px 14px 6px 14px;
+  font-size: 2rem;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: #00000020;
+    cursor: pointer;
+  }
+`;

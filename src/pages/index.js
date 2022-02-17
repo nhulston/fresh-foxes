@@ -26,7 +26,7 @@ import {
     HeroTextWrapper, HeroWrapper,
     Spacer,
 } from "../components/Hero";
-import {BsDiscord, BsTwitter} from "react-icons/bs";
+import {BsDiscord, BsLinkedin, BsTwitter} from "react-icons/bs";
 import Link from 'next/link';
 import Image from "next/image";
 import heroImage from "/public/gif.gif";
@@ -46,7 +46,7 @@ import phase1 from "/public/phase1.png";
 import phase2 from "/public/phase2.png";
 import phase3 from "/public/phase3.png";
 import {LaunchDate} from "../components/LaunchDate";
-import {Team, TeamImageWrapper, TeamMember} from "../components/Team";
+import {Team, TeamImageWrapper, TeamLink, TeamLinkWrapper, TeamMember} from "../components/Team";
 import nick from "/public/nick.png";
 import brandon from "/public/brandon.png";
 import {Footer, FooterHideOnSmallScreen, FooterIconsWrapper, FooterLinks} from "../components/Footer";
@@ -159,7 +159,7 @@ export default function Home() {
                         </Item>
                         <Item>
                             <AboutTitle>Possible Combinations</AboutTitle>
-                            <AboutContent>2,235,870</AboutContent>
+                            <AboutContent>3,129,035</AboutContent>
                         </Item>
                         <Item>
                             <AboutTitle>Mint Price</AboutTitle>
@@ -218,27 +218,33 @@ export default function Home() {
                     <TeamImageWrapper>
                         <Image src={nick} alt="" draggable="false"/>
                     </TeamImageWrapper>
-                    <TeamMemberName>NICHOLAS</TeamMemberName>
+                    <TeamMemberName>NICK HULSTON</TeamMemberName>
                     <TeamMemberRole>ARTIST AND DEVELOPER</TeamMemberRole>
                     <TeamMemberBio>A blockchain developer, designer, and digital artist.</TeamMemberBio>
-                    {/*<TeamLinkWrapper>
-                        <TeamLink>
+                    <TeamLinkWrapper>
+                        <TeamLink
+                            href="https://www.linkedin.com/in/nhulston"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             <BsLinkedin/>
                         </TeamLink>
-                    </TeamLinkWrapper>*/}
+                    </TeamLinkWrapper>
                 </TeamMember>
                 <TeamMember>
                     <TeamImageWrapper>
                         <Image src={brandon} alt="" draggable="false"/>
                     </TeamImageWrapper>
-                    <TeamMemberName>BRANDON</TeamMemberName>
+                    <TeamMemberName>BRANDON LEE</TeamMemberName>
                     <TeamMemberRole>MARKETING AND COMMUNITY GROWTH</TeamMemberRole>
                     <TeamMemberBio>A digital marketer and NFT maxi. Addison Rae&apos;s future sugar daddy.</TeamMemberBio>
-                    {/*<TeamLinkWrapper>
-                        <TeamLink>
+                    <TeamLinkWrapper>
+                        <TeamLink
+                            href="https://www.linkedin.com/in/brandon-hulston-a96270171/"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             <BsLinkedin/>
                         </TeamLink>
-                    </TeamLinkWrapper>*/}
+                    </TeamLinkWrapper>
                 </TeamMember>
             </Team>
             <Footer>
