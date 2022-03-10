@@ -218,33 +218,33 @@ export default function Home() {
                     <TeamImageWrapper>
                         <Image src={nick} alt="" draggable="false"/>
                     </TeamImageWrapper>
-                    <TeamMemberName>NICK HULSTON</TeamMemberName>
+                    <TeamMemberName>NICHOLAS</TeamMemberName>
                     <TeamMemberRole>ARTIST AND DEVELOPER</TeamMemberRole>
                     <TeamMemberBio>A blockchain developer, designer, and digital artist.</TeamMemberBio>
-                    <TeamLinkWrapper>
-                        <TeamLink
-                            href="https://www.linkedin.com/in/nhulston"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <BsLinkedin/>
-                        </TeamLink>
-                    </TeamLinkWrapper>
+                    {/*<TeamLinkWrapper>*/}
+                    {/*    <TeamLink*/}
+                    {/*        href="https://www.linkedin.com/in/nhulston"*/}
+                    {/*        target="_blank"*/}
+                    {/*        rel="noopener noreferrer">*/}
+                    {/*        <BsLinkedin/>*/}
+                    {/*    </TeamLink>*/}
+                    {/*</TeamLinkWrapper>*/}
                 </TeamMember>
                 <TeamMember>
                     <TeamImageWrapper>
                         <Image src={brandon} alt="" draggable="false"/>
                     </TeamImageWrapper>
-                    <TeamMemberName>BRANDON LEE</TeamMemberName>
+                    <TeamMemberName>BRANDON</TeamMemberName>
                     <TeamMemberRole>MARKETING AND COMMUNITY GROWTH</TeamMemberRole>
                     <TeamMemberBio>A digital marketer and NFT maxi. Addison Rae&apos;s future sugar daddy.</TeamMemberBio>
-                    <TeamLinkWrapper>
-                        <TeamLink
-                            href="https://www.linkedin.com/in/brandon-hulston-a96270171/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <BsLinkedin/>
-                        </TeamLink>
-                    </TeamLinkWrapper>
+                    {/*<TeamLinkWrapper>*/}
+                    {/*    <TeamLink*/}
+                    {/*        href="https://www.linkedin.com/in/brandon-hulston-a96270171/"*/}
+                    {/*        target="_blank"*/}
+                    {/*        rel="noopener noreferrer">*/}
+                    {/*        <BsLinkedin/>*/}
+                    {/*    </TeamLink>*/}
+                    {/*</TeamLinkWrapper>*/}
                 </TeamMember>
             </Team>
             <Footer>
