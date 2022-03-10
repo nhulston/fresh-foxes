@@ -163,7 +163,7 @@ export default function Home() {
                         </Item>
                         <Item>
                             <AboutTitle>Mint Price</AboutTitle>
-                            <AboutContent>0.199 SOL</AboutContent>
+                            <AboutContent>0.1 SOL</AboutContent>
                         </Item>
                     </Items>
                 </AboutTextWrapper>
